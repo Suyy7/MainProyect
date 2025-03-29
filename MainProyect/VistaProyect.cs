@@ -45,7 +45,7 @@ namespace mainProyect
 			List<int> dias = AddDays();
 			List<int> potD = AddconsumoP(dias);
 			int ptm = darPTM(potD);
-			int ptMP = ;
+			int ptMP = 1;
 			return new DataUser
 			{
 				Id = uid,
