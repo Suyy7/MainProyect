@@ -3,21 +3,9 @@ using mainProyect;
 
 namespace DatoElectrico
 {
-    interface DatosElectricos
+    interface DatosElectricos // Interface para funciones constantes
     {
-         int voltajeMin { get; set; }
-         int voltajeMax = 220;
-         int amperajeMin = 0;
-         int amperajeMax = 999;
-         int potenciaMin = 0;
-         int potenciaMax = 999999;
-    }
-    public class DevolverDatoElectrico : DatosElectricos
-    {
-        public voltajeMin; 
-
-
-        public int devolverAl(int min, int max)
+        public int devolverAl(int min, int max) // Devolvemos num aleatorio segun parametros
         {
             Random rand = new Random();
             return rand.Next(min, max);
