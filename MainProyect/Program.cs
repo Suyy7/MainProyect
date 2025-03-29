@@ -11,11 +11,7 @@ namespace mainProyect
     {
         static void Main(string[] args)
         {
-           var ampp = new DevolverAmpM();
-           ampp.GetAmp();
-           var voltt = new DevolverVoltM();
-           voltt.GetVolt();
-
+          
         }
         
 

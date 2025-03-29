@@ -18,11 +18,9 @@ namespace DatoElectrico
         {
             return devolverAl(minA, maxA);
         }
-        public int potencia()
+        public int potencia(int a, int b)
         {
-            int a = 0;
-            int b = 5000;
-            return devolverAl(a, b);
+            return a * b;
         }
     }
 }

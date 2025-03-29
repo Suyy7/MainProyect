@@ -48,24 +48,22 @@ namespace DatoElectrico
 
     }
     public class DevolverPowM : DatosElectricos {
-        private int devolverAl(int min, int max) // Devolvemos num aleatorio
-        {
-            Random rand = new Random();
-            return rand.Next(min, max);
-        }
 
         public int Amp { get; set; } 
         public int Vlt { get; set; }
 
-        DevolverPowM(int _min, int _max) {
+        public DevolverPowM(int _min, int _max) {
             Amp = _min;
             Vlt = _max;
         }
         public int potencia()
         {
-            return devolverAl(Vlt, Amp);
+            return Amp * Vlt;
         }
-
+        public void GetPow()
+        {
+            Console.WriteLine("La potencia es: " + potencia());
+        }// Funcion para mostrar potencia en consola
     }
     
 
