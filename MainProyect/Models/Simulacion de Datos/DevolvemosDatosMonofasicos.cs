@@ -56,7 +56,7 @@ namespace DatoElectrico
             Amp = _min;
             Vlt = _max;
         }
-        public int potencia()
+        public int potencia() // Funcion que retorna potencia Monofasica
         {
             return Amp * Vlt;
         }

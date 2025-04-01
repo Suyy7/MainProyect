@@ -8,23 +8,16 @@ using System.Reflection.Metadata.Ecma335;
 // Lista de elementos
 
 // -------------------------------- Class -------------------------------------------//
-namespace mainProyect
+namespace DatoElectrico
 {
-    public class ListDeCalculosE<T> : ValoresElec
+    public class ListDeCalculosE<T> : ValoresElecM
         { // Esta es la clase
             private int devolverAl(int min, int max)
             {
             Random rand = new Random();
             return rand.Next(min, max);
             }
-            private int voltaje(int minV, int maxV)
-            {
-            return devolverAl(minV, maxV);
-            }
-            private int amperaje(int minA, int maxA)
-            {
-            return devolverAl(minA, maxA);
-            }
+            
             private int potencia()
             {
             int a = 0;
@@ -36,7 +29,7 @@ namespace mainProyect
 
             private List<T> _dias; // Esto es un objeto de tipo lista donde vamos a alojar los DIAS
             private List<int> _Cons; // Esto es un objeto de tipo lista donde vamos a alojar los elementos
-            private int _limit;  // Este es el limite de elementos que vamos a recibir
+            private int _limit = 30;  // Este es el limite de elementos que vamos a recibir
 
             public ListDeCalculosE(int limit)
             { // Constructor
@@ -99,7 +92,7 @@ namespace mainProyect
        
         // Clase padre que da metodos
         // Esta clase genera el numero aleatorio.
-        public interface ValoresElec 
+        public interface ValoresElecM
         {
             public int devolverAl(int min, int max)
             {

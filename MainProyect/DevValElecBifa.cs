@@ -1,7 +1,7 @@
 ﻿using System;
 namespace mainProyect
 {
-    public class DevValEEnergyBifa : ValoresElec
+    public class DevValEEnergyBifa : ValoresElecM
     {
         public int devolverAl(int min, int max)
         {

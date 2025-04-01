@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace mainProyect
 {
-	public class DevValEEnergyMono: ValoresElec
+	public class DevValEEnergyMono: ValoresElecM
 	{
         List<int> _dias = new List<int>();
         List<int> _Cons = new List<int>();
